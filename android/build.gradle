@@ -41,7 +41,13 @@ repositories {
   maven {
    url 'https://maven.google.com'
   }
-  maven { url "https://jitpack.io" }
+  maven {
+    credentials {
+      username 'GCEAqH'
+      password 'vjVT17XdsP'
+    }
+    url 'https://repo.rdc.aliyun.com/repository/74593-release-ybKw6X/'
+  }
 }
 
 dependencies {
@@ -54,5 +60,5 @@ dependencies {
   compile "com.google.android.gms:play-services-vision:$googlePlayServicesVersion"
   compile "com.android.support:exifinterface:$supportLibVersion"
 
-  compile 'com.github.react-native-community:cameraview:eb9f726215bbbfcc03a54db92e480d4d02e0c001'
+  compile 'com.github.react-native-community:cameraview:0.0.1'
 }
